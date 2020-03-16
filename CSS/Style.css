@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Nova+Round&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  color: aliceblue;
+  background-color: rgb(41, 40, 40);
+  align-items: center;
+  font-family: "Nova Round", cursive;
+}
+
+.neon {
+  position: absolute;
+  right: 0%;
+  top: 5%;
+  transform: translate(-5%, -5%);
+  margin: 0;
+  padding: 0 20px;
+  font-size: 5em;
+  color: #fff;
+  text-shadow: 0 0 20px #ff005b;
+}
+
+.neon:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 5%;
+  right: 0%;
+  padding: 0 20px;
+  z-index: -1;
+  color: #ff005b;
+  filter: blur(15px);
+}
+
+.neon:before {
+  content: "";
+  position: absolute;
+  top: 5%;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+  background: #fe3a80;
+  z-index: -2;
+
+  opacity: 0.5;
+  filter: blur(40px);
+}
+
+.instruct {
+  position: absolute;
+  top: 78%;
+  right: 0%;
+}
+
+.inst {
+  position: absolute;
+  top: 74%;
+  right: 10%;
+}
+
+.score {
+  position: absolute;
+  top: 45%;
+  right: 8%;
+  font-size: 25px;
+  color: #fe3a80;
+}

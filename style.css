@@ -1,0 +1,146 @@
+/* CSS Document */
+
+body {
+  background: url(images/back.jpg) top center repeat-y;
+
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  display: flex;
+
+  color: aliceblue;
+  background-color: rgb(41, 40, 40);
+
+  font-family: "Nova Round", cursive;
+}
+
+#wrapper {
+  margin: auto;
+
+  width: 778px;
+
+  text-align: center;
+
+  padding-left: 1px;
+}
+
+.line {
+  border-top: 1px dashed #666666;
+}
+
+h1 {
+  color: #cccccc;
+
+  background: url(images/headline_back.jpg) top left no-repeat;
+
+  padding-top: 5px;
+
+  height: 53px;
+
+  font-size: 30px;
+
+  letter-spacing: 5px;
+
+  margin: 40px 0 20px 0;
+}
+
+h2 {
+  color: #fe3a80;
+
+  padding-top: 25px;
+
+  font-size: 20px;
+
+  letter-spacing: 3px;
+}
+
+#content {
+  width: 778px;
+
+  text-align: left;
+}
+
+.clear {
+  clear: both;
+}
+
+/* body {
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  color: aliceblue;
+  background-color: rgb(41, 40, 40);
+  align-items: center;
+  font-family: "Nova Round", cursive;
+} */
+
+.neon {
+  position: absolute;
+  right: 34%;
+  top: 5%;
+  transform: translate(-5%, -5%);
+  margin: 0;
+  padding: 0 20px;
+  font-size: 5em;
+  color: #fff;
+  text-shadow: 0 0 20px #ff005b;
+}
+
+.neon:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 5%;
+  right: 34%;
+  padding: 0 20px;
+  z-index: -1;
+  color: #ff005b;
+  filter: blur(15px);
+}
+
+.neon:before {
+  content: "";
+  position: absolute;
+  top: 5%;
+  right: 34%;
+  width: 100%;
+  height: 100%;
+  background: #fe3a80;
+  z-index: -2;
+
+  opacity: 0.5;
+  filter: blur(40px);
+}
+
+.centerInstruct {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #063;
+  bottom: 0px;
+  right: 25%;
+  left: 0%;
+  margin-left: -150px;
+}
+
+a {
+  position: absolute;
+  display: inline;
+  padding: 15px 30px;
+  color: #2196f3;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.3s;
+  right: 2%;
+  top: 50%;
+}
+
+a:hower {
+  color: #255784;
+  background: #0c4f85;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  transition-delay: 0.8s;
+}
